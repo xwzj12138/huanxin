@@ -1,0 +1,20 @@
+{
+    "name": "xwzj/huanxin",
+    "description": "this is huanxin-sdk",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "xwzj",
+            "email": "13246190524@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Huanxin\\Exception\\":"Huanxin/Exception",
+            "Huanxin\\":"Huanxin"
+        }
+    }
+}
