@@ -29,19 +29,21 @@ class HuanxinDataBase
     //获取请求url
     public function getBaseUrl()
     {
+//        if(!$this->org_name) throw new HuanxinException('请设置唯一租户标识');
+//        if(!$this->app_name) throw new HuanxinException('请设置app唯一标识');
         return $this->base_url.'/'.$this->org_name.'/'.$this->app_name;
     }
 
-    //设置唯一租户标识
-    public function setOrgName($value)
-    {
-        $this->org_name = $value;
-    }
-    //设置app名称
-    public function setAppName($value)
-    {
-        $this->app_name = $value;
-    }
+//    //设置唯一租户标识
+//    public function setOrgName($value)
+//    {
+//        $this->org_name = $value;
+//    }
+//    //设置app名称
+//    public function setAppName($value)
+//    {
+//        $this->app_name = $value;
+//    }
     /**
      * @param string $url  url
      * @param int $second   url执行超时时间，默认30s
