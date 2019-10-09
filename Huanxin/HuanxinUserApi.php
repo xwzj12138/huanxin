@@ -10,7 +10,7 @@ namespace Huanxin;
 
 use Huanxin\Exception\HuanxinException;
 
-class UserApi extends HuanxinDataBase
+class HuanxinUserApi extends HuanxinDataBase
 {
     //授权token
     protected $token;

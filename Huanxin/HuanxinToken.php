@@ -6,7 +6,7 @@
 namespace Huanxin;
 
 
-class Token extends HuanxinDataBase
+class HuanxinToken extends HuanxinDataBase
 {
     /**
      * 获取token值
