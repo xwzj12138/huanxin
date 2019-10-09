@@ -1,7 +1,9 @@
 {
     "name": "xwzj/huanxin",
     "description": "this is huanxin-sdk",
+    "keywords": ["huanxin", "huanxinSDK", "huanxin-SDK", "huanxin-sdk", "IM", "im", "im-sdk"],
     "type": "library",
+    "homepage": "https://github.com/xwzj12138/huanxin",
     "license": "Apache-2.0",
     "authors": [
         {
