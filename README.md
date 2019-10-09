@@ -22,7 +22,8 @@ $ composer require xwzj/huanxin 'dev-master'
 namespace app\common\huanxin;
 
 
-use Huanxin\Token;
+use Huanxin\HuanxinToken;
+use Huanxin\HuanxinUserApi;
 
 class HuanxinServer
 {
@@ -31,7 +32,7 @@ class HuanxinServer
     {
         $appname = '唯一租户标识';
         $Orgname = 'app唯一标识';
-        $huanxin = new Token($Orgname,$appname);
+        $huanxin = new HuanxinToken($Orgname,$appname);
         return $huanxin->getToken('App的client_id','client_secret');
     }
     /**
@@ -45,7 +46,7 @@ class HuanxinServer
     public static function addUser($username,$password,$nickname='')
     {
         $config = config('huanxin');
-        $huanxin = new UserApi($config['ClientID'],$config['ClientSecret']);
+        $huanxin = new HuanxinUserApi($config['ClientID'],$config['ClientSecret']);
         return $huanxin->insertUser($username,$password,$nickname);
     }
 }
