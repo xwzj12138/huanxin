@@ -105,7 +105,6 @@ class HuanxinDataBase
         //返回结果
         if($data){
             curl_close($ch);
-            return $data;
             return json_decode($data,true);
         } else {
             $error = curl_errno($ch);
